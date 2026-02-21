@@ -1,5 +1,14 @@
 {
+  "builds": [
+    {
+      "src": "user-portal/package.json",
+      "use": "@vercel/angular"
+    }
+  ],
   "rewrites": [
-    { "source": "/(.*)", "destination": "/index.html" }
+    {
+      "source": "/(.*)",
+      "destination": "/user-portal/index.html"
+    }
   ]
 }
